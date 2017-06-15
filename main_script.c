@@ -138,9 +138,9 @@ int main(int argc, char *argv[])
 		if(buf[1] == '\n' && buf[0] == '1' && send1 == '0')  // if Bandera Reporte
 		{                        			 
 			system("./md5sum")   ;	            // generate video md5		
-			system("./cliente_md5")  ;          // send md5  
-			system("./cliente_videoReporte") ;  // sends video		
-			system("./cliente_idVideo") ;       // sends id
+			system("./client_md5")  ;          // send md5  
+			system("./client_video") ;  // sends video		
+			system("./client_idVideo") ;       // sends id
 			
 			send1 = '1' ; // Send video once
 		}
